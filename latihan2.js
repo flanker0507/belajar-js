@@ -29,7 +29,7 @@ function Angkot (sopir, trayek, penumpang, kas){
             return this.penumpang;
         }
 
-        for(let i = 0; i < this.penumpang,length; i++){
+        for(let i = 0; i < this.penumpang.length; i++){
             if(this.penumpang[i] === namaPenumpang){
                 this.penumpang[i] = undefined;
                 this.kas += bayar;
