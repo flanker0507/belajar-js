@@ -42,5 +42,6 @@ function Angkot (sopir, trayek, penumpang, kas){
 }
 
 
+
 let angkot1 = new Angkot('Asep Suryadi', ['Binjai', 'Tanjung Balai'], [], 0);
 let angkot2 = new Angkot('Ucok Purnama', ['Takengon', 'New York'], [], 0);
