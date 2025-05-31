@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+<script >
+  const orang= {
+    "nama lengkap": "Yuda Handsome",
+    "alamat": "Indonseia",
+    umur: 24
+  };
+
+  // mengakses property object
+  console.info(`Nama: ${orang["nama lengkap"]}`)
+  console.info(`alamat: ${orang.alamat}`)
+
+  // ubah property / ubah attribute
+  // orang["name"] = "Yuda Wira Pratama";
+  // orang["Alamat"] = "Indonesia";
+  // orang["age"] = 24;
+
+  console.log(orang);
+  console.table(orang);
+
+  delete orang["Alamat"];
+  console.table(orang);
+</script>
+
+</body>
+</html>
