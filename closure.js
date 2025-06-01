@@ -36,8 +36,32 @@ function buatCounterKlik() {
     }
 }
 
-const hitungKlik = buatCounterKlik();
+// const hitungKlik = buatCounterKlik();
+//
+// hitungKlik();
+// hitungKlik();
+// hitungKlik();
 
-hitungKlik();
-hitungKlik();
-hitungKlik();
+// 3. Cache sederhana
+function buatCache() {
+    const cache = {};
+
+    return function (angka) {
+        if (cache[angka]) {
+            console.log(`Ambil dari cache: ${cache[angka]}`);
+            return cache[angka];
+        }else {
+            const hasil = angka * angka;
+            cache[angka] = hasil;
+            console.log(`Hitung baru: ${hasil}`);
+            return hasil;
+        }
+    };
+}
+
+const kuadratDenganCache = buatCache();
+
+kuadratDenganCache(5)
+kuadratDenganCache(5)
+kuadratDenganCache(6)
+kuadratDenganCache(6)
