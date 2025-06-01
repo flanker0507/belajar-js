@@ -22,5 +22,22 @@ function buatPasswordGenerator(panjang) {
     };
 }
 
-const generate8Digit = buatPasswordGenerator(8);
-console.log("Password Akhir: ",generate8Digit());
+// const generate8Digit = buatPasswordGenerator(8);
+// console.log("Password Akhir: ",generate8Digit());
+
+// 2. Menghitung klik tombol
+
+function buatCounterKlik() {
+    let jumlahKlik = 0 ;
+
+    return function () {
+        jumlahKlik++;
+        console.log(`Tombol diklik: ${jumlahKlik} kali`);
+    }
+}
+
+const hitungKlik = buatCounterKlik();
+
+hitungKlik();
+hitungKlik();
+hitungKlik();
