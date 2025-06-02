@@ -40,3 +40,18 @@ ul.insertBefore(liBaru,li2)
 const link = document.getElementsByTagName('a')[0];
 
 sectionA.removeChild(link)
+
+// replace
+const sectionB = document.getElementById('b');
+const p4 = sectionB.getElementsByTagName('p')[0];
+
+const h2Baru = document.createElement('h2');
+const teksH2Baru = document.createTextNode("Asep adalah Kasep");
+
+h2Baru.appendChild(teksH2Baru)
+
+sectionB.replaceChild(h2Baru, p4)
+
+pBaru.style.backgroundColor = 'red';
+liBaru.style.backgroundColor = 'red';
+h2Baru.style.backgroundColor = 'red';
