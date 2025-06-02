@@ -35,6 +35,17 @@
 // }
 
 
-const section8 = document.querySelector('section#b');
-const p4 = section8.getElementsByTagName('p')[0];
-p4.style.backgroundColor = "orange";
+// const section8 = document.querySelector('section#b');
+// const p4 = section8.getElementsByTagName('p')[0];
+// p4.style.backgroundColor = "orange";
+
+// const judul = document.getElementById('judul');
+// judul.innerHTML = "<em>Yuda Ganteng Habizz</em>"
+//
+// const sectionA = document.querySelector('section#a');
+// sectionA.innerHTML = "<em>Yuda Seorang Enterpreneur Sukses</em>"
+
+const judul2 = document.querySelector('#judul');
+judul2.style.color = "red";
+judul2.style.backgroundColor = "lightblue";
+judul2.style.border = "none";
